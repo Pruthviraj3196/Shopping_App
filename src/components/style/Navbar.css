@@ -1,0 +1,51 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* ensures it stays on top of other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ced4da;
+  color: rgb(28, 28, 28);
+  padding: 15px 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #282726;
+}
+
+.navbar div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(171, 37, 37);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #9d21ca;
+}
+
+.navbar button {
+  background-color: #ffcb05;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #222;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #e6b800;
+}
