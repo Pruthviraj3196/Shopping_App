@@ -11,6 +11,7 @@
 .footer-section {
   flex: 1 1 200px;
   margin: 10px;
+  min-width: 220px;
 }
 
 .footer h2, .footer h4 {
@@ -30,8 +31,14 @@
   color: #c6182c;
 }
 
+.footer .icons {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  margin-top: 10px;
+}
+
 .footer .icons a {
-  margin-right: 15px;
   font-size: 1.2rem;
   color: #0a0909;
   transition: color 0.3s;
@@ -41,13 +48,41 @@
   color: #d62c2c;
 }
 
-@media (max-width: 768px) {
+/* ================= Responsive Breakpoints ================= */
+
+/* Tablet Screens */
+@media (max-width: 992px) {
   .footer {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 15px;
   }
 
   .footer-section {
-    margin-bottom: 20px;
+    text-align: center;
+    flex: 1 1 45%;
+  }
+
+  .footer .icons {
+    justify-content: center;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .footer .icons {
+    justify-content: center;
   }
 }

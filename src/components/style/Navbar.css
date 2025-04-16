@@ -1,7 +1,7 @@
 .navbar {
   position: sticky;
   top: 0;
-  z-index: 1000; /* ensures it stays on top of other elements */
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,8 +9,8 @@
   color: rgb(28, 28, 28);
   padding: 15px 30px;
   font-family: 'Arial', sans-serif;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
-
 
 .logo {
   font-size: 1.5rem;
@@ -22,6 +22,7 @@
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap; /* Let content wrap on small screens */
 }
 
 .navbar a {
@@ -48,4 +49,56 @@
 
 .navbar button:hover {
   background-color: #e6b800;
+}
+
+/* ================= Responsive Breakpoints ================= */
+
+/* Medium Devices - Tablets */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .navbar div {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .navbar button,
+  .navbar a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Devices - Mobile Phones */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .navbar button,
+  .navbar a {
+    width: 100%;
+    font-size: 0.85rem;
+    text-align: left;
+  }
 }
