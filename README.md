@@ -1,12 +1,31 @@
-# React + Vite
+# 🛍️ Shopverse - React Shopping App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Shopverse is a modern and responsive shopping app built using **ReactJS**, **Firebase Authentication**, and **Axios** for fetching product data. It features a dynamic cart system, authentication (login/signup), and a mobile-friendly layout.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **Firebase Authentication** (Login / Signup / Logout)
+- 🛒 **Add to Cart / Remove from Cart**
+- ➕➖ **Adjust Quantity in Cart**
+- 💰 **Total Price Calculation**
+- ✅ **Checkout Functionality**
+- 🧾 **Responsive Navbar and Footer**
+- 📱 **Cart Popup like Mobile Drawer**
+-    ** Search Item 
+- 📦 **Products Fetched from [Fake Store API](https://api.escuelajs.co/api/v1/products)**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧪 Tech Stack
+
+- **ReactJS** (Functional Components & Hooks)
+- **Firebase** (Authentication)
+- **Axios** (API Calls)
+- **React Router DOM**
+- **CSS** (Responsive design)
+
+---
+
+
