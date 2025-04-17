@@ -4,6 +4,8 @@ Shopverse is a modern and responsive shopping app built using **ReactJS**, **Fir
 
 ---
 
+## Hosted Site - https://shopping-app-2sse.vercel.app/
+
 ## 🚀 Features
 
 - 🔐 **Firebase Authentication** (Login / Signup / Logout)
