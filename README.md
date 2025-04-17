@@ -35,18 +35,19 @@ Shopverse is a modern and responsive shopping app built using **ReactJS**, **Fir
 
 ## 🛠️ Installation
 
-1. **Clone the repository:**
+
 
 ```bash
+1 Clone the repository:
 git clone https://github.com/pruthviraj3196/Shopping_App.git
 
-Install dependencies:
+2 Install dependencies:
 npm install
 
-## Run the app:
+3 Run the app:
 npm run dev
 
-## Set up your Firebase credentials:
+4 Set up your Firebase credentials:
 const firebaseConfig = {
   apiKey: process.env.VITE_FIREBASE_API_KEY,
   authDomain: process.env.VITE_FIREBASE_AUTH_DOMAIN,
